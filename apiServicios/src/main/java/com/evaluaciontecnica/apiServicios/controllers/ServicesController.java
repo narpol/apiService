@@ -30,5 +30,10 @@ public class ServicesController {
         return this.servicesService.saveNewService(services);
     }
 
+    @GetMapping("/tecnico/{id}")
+    public List<Services> findServiceByTechnician(@PathVariable Long id){
+        return this.servicesService.getServicesByTechnician(id);
+    }
+
 
 }

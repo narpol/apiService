@@ -19,8 +19,8 @@ public class Services {
     private Long id;
     private String direccion;
     private String descripcion;
-    private String horaInicio;
-    private String horaFin;
+    private String fechaHoraInicio;
+    private String fechaHoraFin;
     private Long idTechnician;
 
     @ManyToOne

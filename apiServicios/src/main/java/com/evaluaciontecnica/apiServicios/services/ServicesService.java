@@ -26,5 +26,9 @@ public class ServicesService {
         return this.servicesRepository.save(service);
     }
 
+    public List<Services> getServicesByTechnician(Long idTechnician){
+        return this.servicesRepository.findByIdTechnician(idTechnician);
+    }
+
 
 }
