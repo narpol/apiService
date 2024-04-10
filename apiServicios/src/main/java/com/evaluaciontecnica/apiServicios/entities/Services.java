@@ -21,6 +21,7 @@ public class Services {
     private String descripcion;
     private String horaInicio;
     private String horaFin;
+    private Long idTechnician;
 
     @ManyToOne
     @JoinColumn(name = "idTecnico", insertable = false, nullable = false)
